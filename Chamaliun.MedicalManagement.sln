@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{0BA0076F-3AD6-4CA1-AA45-5333DF6A0275}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{3BB1D32F-E944-49BC-8F38-FE33E31204A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{27C69078-3D71-47BF-90B8-EBBCDE8CE8D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{4029A02B-3121-4639-BFA3-8A2821F8E531}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{2F46BBD6-AED6-4A6A-9FA4-38E4089A737F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chamaliun.MedicalManagement.Web", "src\Chamaliun.MedicalManagement.Web\Chamaliun.MedicalManagement.Web.csproj", "{B7FAEA84-95EA-4EAD-96D3-18CB68218B9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chamaliun.MedicalManagement.Domain", "src\Chamaliun.MedicalManagement.Domain\Chamaliun.MedicalManagement.Domain.csproj", "{780583C9-4BC7-43D9-ACBC-DAF8A6DE352B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chamaliun.MedicalManagement.Infra", "src\Chamaliun.MedicalManagement.Infra\Chamaliun.MedicalManagement.Infra.csproj", "{F8C4A470-476E-44B7-B908-1E1FC73089EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7FAEA84-95EA-4EAD-96D3-18CB68218B9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7FAEA84-95EA-4EAD-96D3-18CB68218B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7FAEA84-95EA-4EAD-96D3-18CB68218B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7FAEA84-95EA-4EAD-96D3-18CB68218B9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{780583C9-4BC7-43D9-ACBC-DAF8A6DE352B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{780583C9-4BC7-43D9-ACBC-DAF8A6DE352B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{780583C9-4BC7-43D9-ACBC-DAF8A6DE352B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{780583C9-4BC7-43D9-ACBC-DAF8A6DE352B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8C4A470-476E-44B7-B908-1E1FC73089EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8C4A470-476E-44B7-B908-1E1FC73089EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8C4A470-476E-44B7-B908-1E1FC73089EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8C4A470-476E-44B7-B908-1E1FC73089EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B7FAEA84-95EA-4EAD-96D3-18CB68218B9B} = {2F46BBD6-AED6-4A6A-9FA4-38E4089A737F}
+		{780583C9-4BC7-43D9-ACBC-DAF8A6DE352B} = {3BB1D32F-E944-49BC-8F38-FE33E31204A2}
+		{F8C4A470-476E-44B7-B908-1E1FC73089EE} = {4029A02B-3121-4639-BFA3-8A2821F8E531}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {334D7CF1-9C07-48D0-9599-0269598097F6}
+	EndGlobalSection
+EndGlobal
