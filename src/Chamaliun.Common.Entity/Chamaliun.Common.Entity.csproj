@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F8C4A470-476E-44B7-B908-1E1FC73089EE}</ProjectGuid>
+    <ProjectGuid>{DFE5CF8C-5DA7-4029-A4E9-CCF47B9EA881}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Chamaliun.MedicalManagement.Infra</RootNamespace>
-    <AssemblyName>Chamaliun.MedicalManagement.Infra</AssemblyName>
+    <RootNamespace>Chamaliun.Common.Entity</RootNamespace>
+    <AssemblyName>Chamaliun.Common.Entity</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -48,51 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\ORM\EF\MMDbContext.cs" />
-    <Compile Include="Migrations\201907210145134_InitialMigration.cs" />
-    <Compile Include="Migrations\201907210145134_InitialMigration.Designer.cs">
-      <DependentUpon>201907210145134_InitialMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201907211503288_AddEntityTypeConfigurationWithFluentApi.cs" />
-    <Compile Include="Migrations\201907211503288_AddEntityTypeConfigurationWithFluentApi.Designer.cs">
-      <DependentUpon>201907211503288_AddEntityTypeConfigurationWithFluentApi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201907211942374_AddChamaliunEntityAbstractConfig.cs" />
-    <Compile Include="Migrations\201907211942374_AddChamaliunEntityAbstractConfig.Designer.cs">
-      <DependentUpon>201907211942374_AddChamaliunEntityAbstractConfig.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="ChamaliunEntityAbstractConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TypeConfiguration\BairroTypeConfiguration.cs" />
-    <Compile Include="TypeConfiguration\ChamaliunEntityAbstratcConfig.cs" />
-    <Compile Include="TypeConfiguration\CidadeTypeConfiguration.cs" />
-    <Compile Include="TypeConfiguration\UfTypeConfiguration.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Chamaliun.Common.Entity\Chamaliun.Common.Entity.csproj">
-      <Project>{dfe5cf8c-5da7-4029-a4e9-ccf47b9ea881}</Project>
-      <Name>Chamaliun.Common.Entity</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Chamaliun.MedicalManagement.Domain\Chamaliun.MedicalManagement.Domain.csproj">
-      <Project>{780583c9-4bc7-43d9-acbc-daf8a6de352b}</Project>
-      <Name>Chamaliun.MedicalManagement.Domain</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201907210145134_InitialMigration.resx">
-      <DependentUpon>201907210145134_InitialMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201907211503288_AddEntityTypeConfigurationWithFluentApi.resx">
-      <DependentUpon>201907211503288_AddEntityTypeConfigurationWithFluentApi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201907211942374_AddChamaliunEntityAbstractConfig.resx">
-      <DependentUpon>201907211942374_AddChamaliunEntityAbstractConfig.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
