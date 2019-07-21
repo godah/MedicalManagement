@@ -1,4 +1,5 @@
 ﻿using Chamaliun.MedicalManagement.Domain.Entities;
+using Chamaliun.MedicalManagement.Infra.Entity;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
@@ -19,6 +20,11 @@ namespace Chamaliun.MedicalManagement.Infra.Data.ORM.EF
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
             modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
+
+            //Add FluentApi Map
+            modelBuilder.Configurations.Add(new UfMap());
+            modelBuilder.Configurations.Add(new CidadeMap());
+            modelBuilder.Configurations.Add(new BairroMap());
 
             modelBuilder.Properties()
                 .Where(p => p.Name == p.ReflectedType.Name + "Id")

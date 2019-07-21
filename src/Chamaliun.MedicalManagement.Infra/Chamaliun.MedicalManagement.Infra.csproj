@@ -49,16 +49,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\ORM\EF\MMDbContext.cs" />
+    <Compile Include="Entity\BairroMap.cs" />
+    <Compile Include="Entity\CidadeMap.cs" />
+    <Compile Include="Entity\UfMap.cs" />
     <Compile Include="Migrations\201907210145134_InitialMigration.cs" />
     <Compile Include="Migrations\201907210145134_InitialMigration.Designer.cs">
       <DependentUpon>201907210145134_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907211503288_AddEntityTypeConfigurationWithFluentApi.cs" />
+    <Compile Include="Migrations\201907211503288_AddEntityTypeConfigurationWithFluentApi.Designer.cs">
+      <DependentUpon>201907211503288_AddEntityTypeConfigurationWithFluentApi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entity\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
@@ -72,6 +77,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201907210145134_InitialMigration.resx">
       <DependentUpon>201907210145134_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907211503288_AddEntityTypeConfigurationWithFluentApi.resx">
+      <DependentUpon>201907211503288_AddEntityTypeConfigurationWithFluentApi.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
